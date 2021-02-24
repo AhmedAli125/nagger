@@ -1,5 +1,8 @@
 import { useReducer } from 'react'
-import { } from './type'
+import {
+    CLOSE_MODAL,
+    OPEN_MODAL
+ } from './type'
 import NaggerContext from './NaggerContext'
 import NaggerReducer from './NaggerReducer'
 
@@ -12,9 +15,19 @@ const NaggerState = props => {
 
     //functions
 
+    const closeModal = () => {
+        dispatch({type: CLOSE_MODAL})
+    }
+
+    const openModal = () => {
+        dispatch({type: OPEN_MODAL})
+    }
+
     return (
         <NaggerContext.Provider value={ {
-            isModalOpen: state.isModalOpen
+            isModalOpen: state.isModalOpen,
+            closeModal,
+            openModal
         }}>
             {props.children}
         </NaggerContext.Provider>

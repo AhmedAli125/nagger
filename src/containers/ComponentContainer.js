@@ -6,6 +6,7 @@ import {
 } from 'react-bootstrap'
 import Banner from '../components/banner/Banner'
 import Header from '../components/header/Header'
+import CustomModal from '../components/modal/Modal'
 import ReminderContainer from '../components/reminder/ReminderContainer'
 import NaggerContext from '../context/NaggerContext'
 
@@ -13,7 +14,7 @@ function ComponentContainer() {
 
     const naggerContext = useContext(NaggerContext)
     const {isModalOpen} = naggerContext
-
+    
     return (
         <Container fluid>
             <Row>
@@ -31,7 +32,7 @@ function ComponentContainer() {
                     <ReminderContainer/>
                 </Col>
             </Row>      
-            {isModalOpen && <h1>hello World</h1>}
+            {isModalOpen && <CustomModal/>}
         </Container>
     )
 }
