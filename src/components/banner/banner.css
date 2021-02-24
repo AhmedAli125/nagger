@@ -1,0 +1,40 @@
+.banner-container{
+    background-color: #d4f7f54a;
+    height: 55vh;
+    /* position: fixed; */
+    margin-top: -160px;
+    border-bottom-left-radius: 300px;
+    width: 97vw;
+    margin-top: 0rem;
+}
+
+.arrow-icon{
+    font-size: 30px;
+    margin-left: 1rem;
+}
+
+.span-class{
+    color: #009688;
+}
+
+.banner-content-container{
+    width: 300px
+}
+
+.banner-heading{
+    font-weight: 700;
+    word-spacing: 5px;
+    padding-top: 10rem;
+}
+
+.reminder-button{
+    background-color: #009688;
+    border: none;
+    border-radius: 20px;
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.reminder-button:hover{
+    background-color: #009182;
+}

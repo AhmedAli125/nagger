@@ -1,0 +1,25 @@
+.custom-navbar{
+  background-color: #d4f7f54a;
+  /* width: 100vw; */
+}
+
+.brand-name{
+    background-color: #009688;
+    width: 150px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* color:#fff; */
+    text-align: center;
+}
+
+.nav-links{
+    margin-left: 6rem;
+    font-weight: 600;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+}
