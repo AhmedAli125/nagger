@@ -8,7 +8,8 @@ import NaggerReducer from './NaggerReducer'
 
 const NaggerState = props => {
     const initialState = {
-        isModalOpen: false
+        isModalOpen: false,
+        reminders: null
     }
 
     const [state, dispatch] = useReducer(NaggerReducer, initialState)
@@ -23,9 +24,11 @@ const NaggerState = props => {
         dispatch({type: OPEN_MODAL})
     }
 
+
     return (
         <NaggerContext.Provider value={ {
             isModalOpen: state.isModalOpen,
+            reminders: state.reminders,
             closeModal,
             openModal
         }}>

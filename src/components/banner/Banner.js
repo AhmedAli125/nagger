@@ -1,7 +1,6 @@
 import React, {useContext} from 'react'
 import {
-    Container,
-    Button
+    Container
 } from 'react-bootstrap'
 import {
     MdTrendingFlat
@@ -20,9 +19,9 @@ function Banner() {
                     <h1 className='banner-heading'>
                         Don't Worry <span className='span-class'>Set a</span> Reminder
                     </h1>
-                    <Button className='reminder-button' onClick={openModal}>
+                    <button className='reminder-button' onClick={openModal}>
                         Set a Reminder <MdTrendingFlat className='arrow-icon'/>
-                    </Button>
+                    </button>
                 </div>
             </Container>
         </Container>

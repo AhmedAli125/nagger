@@ -30,9 +30,11 @@
 .reminder-button{
     background-color: #009688;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 22px;
     margin-top: 1rem;
+    padding: 10px 1rem;
+    color: white;
 }
 
 .reminder-button:hover{
